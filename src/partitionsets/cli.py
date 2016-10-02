@@ -52,13 +52,13 @@ def main(argv=None):
     """
     argv = sys.argv if argv is None else argv
 
-    BELLS = [1, 2, 5, 15, 52, 203, 877, 4140, 21147, 115975, 678570,
+    bells = [1, 2, 5, 15, 52, 203, 877, 4140, 21147, 115975, 678570,
              4213597, 27644437, 190899322, 1382958545, 10480142147,
              82864869804, 682076806159, 5832742205057, 51724158235372,
              474869816156751, 4506715738447323, 44152005855084346,
              445958869294805289, 4638590332229999353, 49631246523618756274]
 
-    N_BELLS_OK = 25  # could be len(bells), but overflows forbid that :-)
+    n_bells_ok = 25  # could be len(bells), but overflows forbid that :-)
     parser = argparse.ArgumentParser(
         description="partitioning of small sets with 25 or less members")
     group = parser.add_mutually_exclusive_group()
@@ -93,39 +93,39 @@ def main(argv=None):
               ' in this version, sorry.')
     if args.bell_numbers:
         if not args.type or args.type == 'text':
-            for n in range(0, len(BELLS)):
-                print("%2d: %20d" % (n, BELLS[n]))
+            for ndx in range(0, len(bells)):
+                print("%2d: %20d" % (ndx, bells[ndx]))
         elif args.type == 'json':
             p_map = {'d': {}}
             p_map['d']['bellNumbers'] = []
-            for n in range(0, len(BELLS)):
-                p_map['d']['bellNumbers'].append(BELLS[n])
+            for ndx in range(0, len(bells)):
+                p_map['d']['bellNumbers'].append(bells[ndx])
             print(json.dumps(p_map))
         else:
             # must be args.type == 'csv' since choices are checked beforehand
-            for n in range(0, len(BELLS)):
-                print("%d,%d" % (n, BELLS[n]))
+            for ndx in range(0, len(bells)):
+                print("%d,%d" % (ndx, bells[ndx]))
         sys.exit(0)
     if args.element:
         if args.multi_set:
-            AN_XSET = list(" ".join(args.element).split(" "))
+            an_xset = list(" ".join(args.element).split(" "))
         else:
-            AN_XSET = ordered_set.OrderedSet(
+            an_xset = ordered_set.OrderedSet(
                 list(" ".join(args.element).split(" ")))
     if args.verbosity >= 2:
-        print('Even a small class, such as {%s},' % (', '.join(AN_XSET),),
+        print('Even a small class, such as {%s},' % (', '.join(an_xset),),
               end=" ")
         print('can be partitioned in a surprising number of different ways:')
-    N_X_S = len(AN_XSET)
-    BELL_NUMBER = BELLS[N_X_S - 1] if N_X_S < N_BELLS_OK else BELLS[N_BELLS_OK]
-    if N_X_S > N_BELLS_OK:
-        print('Error: Not prepared for %d partitions.' % (N_X_S,))
-        print('       Sorry. Please use %d members or less.' % (N_BELLS_OK,))
+    n_x_s = len(an_xset)
+    bell_number = bells[n_x_s - 1] if n_x_s < n_bells_ok else bells[n_bells_ok]
+    if n_x_s > n_bells_ok:
+        print('Error: Not prepared for %d partitions.' % (n_x_s,))
+        print('       Sorry. Please use %d members or less.' % (n_bells_ok,))
         sys.exit(1)
-    A_PARTITION = partition.Partition(AN_XSET)
+    a_partition = partition.Partition(an_xset)
     if not args.type or args.type == 'text':
 
-        for a_part in A_PARTITION:
+        for a_part in a_partition:
             d_part = repr(a_part)
             if args.verbosity >= 1:
                 d_part = d_part.replace('[', '{').replace(']', '}')
@@ -138,8 +138,8 @@ def main(argv=None):
 
         if args.verbosity:
             print('    ' + '=> (Number of partitions = %d,'
-                  % (len(A_PARTITION),), end=" ")
-            print('expected is %d)' % (BELL_NUMBER,))
+                  % (len(a_partition),), end=" ")
+            print('expected is %d)' % (bell_number,))
         if args.verbosity >= 3:
             print('Procedure class-partitions takes one argument, a', end=" ")
             print('finite class C(members separated by one or more', end=" ")
@@ -151,21 +151,21 @@ def main(argv=None):
     elif args.type == 'json':
         p_map = {'d': {}}
         if args.verbosity:
-            p_map['d']['__metadata'] = {'set': list(AN_XSET),
-                                        'bellNumber': BELL_NUMBER,
-                                        'numberOfPartitions': len(A_PARTITION)
+            p_map['d']['__metadata'] = {'set': list(an_xset),
+                                        'bellNumber': bell_number,
+                                        'numberOfPartitions': len(a_partition)
                                         }
         p_map['d']['partitions'] = []
-        for a_part in A_PARTITION:
+        for a_part in a_partition:
             p_map['d']['partitions'].append(a_part)
         print(json.dumps(p_map))
     else:  # must be args.type == 'csv' since choices are checked beforehand
-        for a_part in A_PARTITION:
-            N_P_S = len(a_part)
+        for a_part in a_partition:
+            n_p_s = len(a_part)
             r_map = []
-            for s in a_part:
-                r_map.append(' '.join(s))
-            r_map += ['' for __ in range(N_P_S, N_X_S)]
+            for st in a_part:
+                r_map.append(' '.join(st))
+            r_map += ['' for __ in range(n_p_s, n_x_s)]
             print(','.join(r_map))
 
     return 0
