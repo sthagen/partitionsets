@@ -50,13 +50,13 @@ def test():
     if len(sys.argv) > 1:
         ordered_set = OrderedSet(list(" ".join(sys.argv[1:]).split(" ")))
     else:
-        print ('Usage: %s member1 [m2 [m3 ... m25 ...]]' % (sys.argv[0],))
-        print ('Note: Order will be preserved but multiple identical'
-               ' members replaced'
-               ' by first occurence, i.e. A B C B maps to A B C')
-        print (' ' * 4 + 'Sample run with default test case below:')
+        print('Usage: %s member1 [m2 [m3 ... m25 ...]]' % (sys.argv[0],))
+        print('Note: Order will be preserved but multiple identical'
+              ' members replaced'
+              ' by first occurence, i.e. A B C B maps to A B C')
+        print(' ' * 4 + 'Sample run with default test case below:')
         ordered_set = OrderedSet(list('red green yellow blue'.split(" ")))
-    print ('{%s}' % (', '.join(ordered_set),))
+    print('{%s}' % (', '.join(ordered_set),))
 
 
 if __name__ == '__main__':

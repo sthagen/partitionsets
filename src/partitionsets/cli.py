@@ -163,8 +163,8 @@ def main(argv=None):
         for a_part in a_partition:
             n_p_s = len(a_part)
             r_map = []
-            for st in a_part:
-                r_map.append(' '.join(st))
+            for a_p in a_part:
+                r_map.append(' '.join(a_p))
             r_map += ['' for __ in range(n_p_s, n_x_s)]
             print(','.join(r_map))
 
