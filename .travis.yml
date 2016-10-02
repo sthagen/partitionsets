@@ -3,38 +3,39 @@ python: '3.5'
 sudo: false
 env:
   global:
-    - LD_PRELOAD=/lib/x86_64-linux-gnu/libSegFault.so
-    - SEGFAULT_SIGNALS=all
+  - LD_PRELOAD=/lib/x86_64-linux-gnu/libSegFault.so
+  - SEGFAULT_SIGNALS=all
   matrix:
-    - TOXENV=check
-    - TOXENV=docs
-
-    - TOXENV=py27,coveralls,codecov
-    - TOXENV=py33,coveralls,codecov
-    - TOXENV=py34,coveralls,codecov
-    - TOXENV=py35,coveralls,codecov
-    - TOXENV=pypy,coveralls,codecov
+  - TOXENV=check
+  - TOXENV=docs
+  - TOXENV=py27,coveralls,codecov
+  - TOXENV=py33,coveralls,codecov
+  - TOXENV=py34,coveralls,codecov
+  - TOXENV=py35,coveralls,codecov
+  - TOXENV=pypy,coveralls,codecov
 before_install:
-  - python --version
-  - uname -a
-  - lsb_release -a
+- python --version
+- uname -a
+- lsb_release -a
 install:
-  - pip install tox
-  - virtualenv --version
-  - easy_install --version
-  - pip --version
-  - tox --version
+- pip install tox
+- virtualenv --version
+- easy_install --version
+- pip --version
+- tox --version
 script:
-  - tox -v
+- tox -v
 after_failure:
-  - more .tox/log/* | cat
-  - more .tox/*/log/* | cat
+- more .tox/log/* | cat
+- more .tox/*/log/* | cat
 before_cache:
-  - rm -rf $HOME/.cache/pip/log
+- rm -rf $HOME/.cache/pip/log
 cache:
   directories:
-    - $HOME/.cache/pip
+  - $HOME/.cache/pip
 notifications:
   email:
     on_success: never
     on_failure: always
+  slack:
+    secure: CN+J3P6fmdBgG/UorDUy7unRmalcQhna0po2zAFb+vL0rC9ZrZigow50TRzffkjgSrgLx0LTCvYwjwIb/E1+s3L2KU8YIIycPfETTWMVT65DBooU5XH+fBomQRIfYfHqdhK8jNbHSRJqLXWdUF/le0yHzBKYjNIDByDt84LFPG8b2HLmlS7BGbI4I1DJrLgB6Osu9hQF79XWRvU2Og2tVcmI8trj6wrzs29WJRrpFT+do/JCWbK8Mr9mOa4j9IgTB0h8rwJ8Cg9Y46csLCfmL4cgKzMV3+Vp57voJ5TMINXdq9/sh42D6m+B1V8S80j3UDnLAG6SAHNnC1ZKZit4l1S7p0AVF+UEhPYud7Q3wZMsnTuyv6spgc5xTB2hiBsOLBTaJwfIeIX8sQQkzPGCqUM7nKL7xTcrur4WVxeU65aNR90964ZEowYlEc5K4n8qX6zBUxmjABfVfsJ9qHc8bp5sXwgIYNBqdnJ7PzsodmOjkmSHOmj5vT/982FQjNDlLqgIEGIRSWDqRJ1QGzCsrJ3Z9vPWzZFLKTpNMEW1mPy6zO8zwodIphlZ2y86AEkezMERuo8sHwlYZe2psIREE1RrMGRQFAsi2NZq+y7JSHlQqhsSu+Sa69fxJtwJsKkNaqxkGcjc56iH2WLF4RqZAm9GBOzY9NjdTjXeswBt7Ek=
