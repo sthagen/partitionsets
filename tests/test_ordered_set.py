@@ -16,7 +16,7 @@ class TestOrderedSet(unittest.TestCase):
     def test_oset(self):
         """ Make sure the ordered set cast does not lose any elements. """
         an_oset = list(ordered_set.OrderedSet(self.seq))
-        self.assertEqual(an_oset, self.seq)
+        self.assertEqual(an_oset, list(self.seq))
 
     def test_len(self):
         """ Test the __len__ method. """
