@@ -20,7 +20,8 @@ import argparse
 import json
 import sys
 
-from partitionsets import partition, ordered_set
+from partitionsets import ordered_set
+from partitionsets import partition
 
 
 def main(argv=None):

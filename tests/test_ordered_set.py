@@ -2,8 +2,9 @@
 """ This is the main test runner.
 It discovers the tests available and runs them.  """
 
-from partitionsets import ordered_set
 import unittest
+
+from partitionsets import ordered_set
 
 
 class TestOrderedSet(unittest.TestCase):
