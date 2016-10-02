@@ -34,7 +34,7 @@ Overview
 
 .. |coveralls| image:: https://coveralls.io/repos/sdrees/python-partitionsets/badge.svg?branch=master&service=github
     :alt: Coverage Status
-    :target: https://coveralls.io/r/sdrees/python-partitionsets
+    :target: https://coveralls.io/github/sdrees/python-partitionsets
 
 .. |codecov| image:: https://codecov.io/github/sdrees/python-partitionsets/coverage.svg?branch=master
     :alt: Coverage Status
@@ -54,23 +54,23 @@ Overview
 
 .. |version| image:: https://img.shields.io/pypi/v/partitionsets.svg?style=flat
     :alt: PyPI Package latest release
-    :target: https://pypi.python.org/pypi/partitionsets
+    :target: https://pypi.python.org/pypi/PartitionSets
 
 .. |downloads| image:: https://img.shields.io/pypi/dm/partitionsets.svg?style=flat
     :alt: PyPI Package monthly downloads
-    :target: https://pypi.python.org/pypi/partitionsets
+    :target: https://pypi.python.org/pypi/PartitionSets
 
 .. |wheel| image:: https://img.shields.io/pypi/wheel/partitionsets.svg?style=flat
     :alt: PyPI Wheel
-    :target: https://pypi.python.org/pypi/partitionsets
+    :target: https://pypi.python.org/pypi/PartitionSets
 
 .. |supported-versions| image:: https://img.shields.io/pypi/pyversions/partitionsets.svg?style=flat
     :alt: Supported versions
-    :target: https://pypi.python.org/pypi/partitionsets
+    :target: https://pypi.python.org/pypi/PartitionSets
 
 .. |supported-implementations| image:: https://img.shields.io/pypi/implementation/partitionsets.svg?style=flat
     :alt: Supported implementations
-    :target: https://pypi.python.org/pypi/partitionsets
+    :target: https://pypi.python.org/pypi/PartitionSets
 
 .. |scrutinizer| image:: https://img.shields.io/scrutinizer/g/sdrees/python-partitionsets/master.svg?style=flat
     :alt: Scrutinizer Status

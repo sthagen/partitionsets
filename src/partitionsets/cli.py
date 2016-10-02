@@ -20,7 +20,7 @@ import argparse
 import json
 import sys
 
-from partitionsets import partition, ordered_set, data_proxy
+from partitionsets import partition, ordered_set
 
 
 def main(argv=None):
@@ -51,7 +51,12 @@ def main(argv=None):
     """
     argv = sys.argv if argv is None else argv
 
-    BELLS = data_proxy.bell_number_data()
+    BELLS = [1, 2, 5, 15, 52, 203, 877, 4140, 21147, 115975, 678570,
+             4213597, 27644437, 190899322, 1382958545, 10480142147,
+             82864869804, 682076806159, 5832742205057, 51724158235372,
+             474869816156751, 4506715738447323, 44152005855084346,
+             445958869294805289, 4638590332229999353, 49631246523618756274]
+
     N_BELLS_OK = 25  # could be len(bells), but overflows forbid that :-)
     parser = argparse.ArgumentParser(
         description="partitioning of small sets with 25 or less members")
@@ -73,7 +78,7 @@ def main(argv=None):
                         help="export the Bell numbers known by package")
     parser.add_argument(
         "-m", "--multi-set", action="store_true",
-        help="handle elements as being par tof a multiset or bag")
+        help="handle elements as being part of a multiset or bag")
 
     parser.add_argument(
         "element", nargs="+",
