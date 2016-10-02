@@ -164,8 +164,7 @@ def main(argv=None):
             r_map = []
             for s in a_part:
                 r_map.append(' '.join(s))
-            for i in range(N_P_S, N_X_S):
-                r_map.append('')
+            r_map += ['' for __ in range(N_P_S, N_X_S)]
             print(','.join(r_map))
 
     return 0

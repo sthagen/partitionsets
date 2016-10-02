@@ -136,8 +136,8 @@ def test():
     n_o_s = len(a_list)
     bell_number = bells[n_o_s - 1] if n_o_s < n_bells_ok else bells[n_bells_ok]
     if n_o_s > n_bells_ok:
-        print ('Error: Not prepared for %d partitions.') % (n_o_s,)
-        print ('       Sorry. Please use %d members or less.') % (n_bells_ok,)
+        print ('Error: Not prepared for %d partitions.' % (n_o_s,))
+        print ('       Sorry. Please use %d members or less.' % (n_bells_ok,))
         sys.exit(1)
     a_partition = Partition(a_list)
     for a_part in a_partition:
