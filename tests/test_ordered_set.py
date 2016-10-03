@@ -30,6 +30,20 @@ class TestOrderedSet(unittest.TestCase):
         for i in self.seq:
             self.assertEqual(an_oset[i], i)
 
+    def test_del(self):
+        """ Test the __delitem__ dummy method. """
+        an_oset = ordered_set.OrderedSet(self.seq)
+        another_oset = ordered_set.OrderedSet(self.seq)
+        del an_oset[0]
+        self.assertEqual(an_oset[0], another_oset[0])
+
+    def test_set(self):
+        """ Test the __setitem__ dummy method. """
+        an_oset = ordered_set.OrderedSet(self.seq)
+        another_oset = ordered_set.OrderedSet(self.seq)
+        an_oset[0] = 'foo bar baz'
+        self.assertEqual(an_oset[0], another_oset[0])
+
 
 suite = unittest.TestLoader().loadTestsFromTestCase(TestOrderedSet)
 unittest.TextTestRunner(verbosity=2).run(suite)

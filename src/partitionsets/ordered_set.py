@@ -36,28 +36,8 @@ class OrderedSet(Sequence):
     def __delitem__(self, index):
         pass
 
-    def __setitem__(self, index):
+    def __setitem__(self, index, value):
         pass
 
     def __len__(self):
         return len(self.__oset)
-
-
-def test():
-    """ The call interface implemented as test function since
-    it has a default behaviour if no input is given.  """
-    import sys
-    if len(sys.argv) > 1:
-        ordered_set = OrderedSet(list(" ".join(sys.argv[1:]).split(" ")))
-    else:
-        print('Usage: %s member1 [m2 [m3 ... m25 ...]]' % (sys.argv[0],))
-        print('Note: Order will be preserved but multiple identical'
-              ' members replaced'
-              ' by first occurence, i.e. A B C B maps to A B C')
-        print(' ' * 4 + 'Sample run with default test case below:')
-        ordered_set = OrderedSet(list('red green yellow blue'.split(" ")))
-    print('{%s}' % (', '.join(ordered_set),))
-
-
-if __name__ == '__main__':
-    test()

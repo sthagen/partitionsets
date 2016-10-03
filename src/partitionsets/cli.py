@@ -24,6 +24,38 @@ from partitionsets import ordered_set
 from partitionsets import partition
 
 
+def parse_args(argv=None):
+    """DRY and KISS."""
+
+    parser = argparse.ArgumentParser(
+        description="partitioning of small sets with 25 or less members")
+    group = parser.add_mutually_exclusive_group()
+    # group.add_argument("-v", "--verbose", action="store_true")
+    group.add_argument("-q", "--quiet", action="store_true")
+    group.add_argument(
+        "-v", "--verbosity", action="count", default=0,
+        help="increase output verbosity")
+    parser.add_argument(
+        '-o', '--out-filename', action='store', nargs=1,
+        help='out file name if specified, else all sent to stdout',
+        required=False)
+    parser.add_argument(
+        "-T", "--type", type=str, choices=['text', 'csv', 'json'],
+        default="text",
+        help="type of output (format), defaults to text")
+    parser.add_argument("-b", "--bell-numbers", action="store_true",
+                        help="export the Bell numbers known by package")
+    parser.add_argument(
+        "-m", "--multi-set", action="store_true",
+        help="handle elements as being part of a multiset or bag")
+
+    parser.add_argument(
+        "element", nargs="+",
+        help="define set as list of elements separated by spaces")
+
+    return parser.parse_args(argv)
+
+
 def main(argv=None):
     """
     Args:
@@ -59,32 +91,7 @@ def main(argv=None):
              445958869294805289, 4638590332229999353, 49631246523618756274]
 
     n_bells_ok = 25  # could be len(bells), but overflows forbid that :-)
-    parser = argparse.ArgumentParser(
-        description="partitioning of small sets with 25 or less members")
-    group = parser.add_mutually_exclusive_group()
-    # group.add_argument("-v", "--verbose", action="store_true")
-    group.add_argument("-q", "--quiet", action="store_true")
-    group.add_argument(
-        "-v", "--verbosity", action="count", default=0,
-        help="increase output verbosity")
-    parser.add_argument(
-        '-o', '--out-filename', action='store', nargs=1,
-        help='out file name if specified, else all sent to stdout',
-        required=False)
-    parser.add_argument(
-        "-T", "--type", type=str, choices=['text', 'csv', 'json'],
-        default="text",
-        help="type of output (format), defaults to text")
-    parser.add_argument("-b", "--bell-numbers", action="store_true",
-                        help="export the Bell numbers known by package")
-    parser.add_argument(
-        "-m", "--multi-set", action="store_true",
-        help="handle elements as being part of a multiset or bag")
-
-    parser.add_argument(
-        "element", nargs="+",
-        help="define set as list of elements separated by spaces")
-    args = parser.parse_args(argv)
+    args = parse_args(argv)
 
     out_file = False
     if args.out_filename:
