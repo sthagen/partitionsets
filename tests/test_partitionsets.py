@@ -89,7 +89,7 @@ def test_main_q_o():
         ]
         assert main(arg_tv) == 0
     except IOError as e:
-        print 'Unexpected IOError, maybe build/test system exoctic?'
+        raise e
     else:
         try:
             os.remove(o_path)
