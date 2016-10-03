@@ -58,7 +58,7 @@ class Partition:
     def __delitem__(self, index):
         pass
 
-    def __setitem__(self, index):
+    def __setitem__(self, key, value):
         pass
 
     def as_set_partition(self, a_list):
@@ -108,51 +108,3 @@ class Partition:
                 a_list[i] = r_saught // v_j + 1
                 r_saught %= v_j
         return a_list
-
-
-def test():
-    """ The call interface implemented as test function since
-    it has a default behaviour if no input is given.
-    For details on meaning and values of Bell's numbers cf. [A0001101].  """
-
-    import sys
-
-    bells = [1, 2, 5, 15, 52, 203, 877, 4140, 21147, 115975, 678570,
-             4213597, 27644437, 190899322, 1382958545, 10480142147,
-             82864869804, 682076806159, 5832742205057, 51724158235372,
-             474869816156751, 4506715738447323, 44152005855084346,
-             445958869294805289, 4638590332229999353, 49631246523618756274]
-
-    n_bells_ok = 25  # could be len(bells), but overflows forbid that :-)
-    if len(sys.argv) > 1:
-        a_list = list(" ".join(sys.argv[1:]).split(" "))
-    else:
-        print('Usage: %s member1 [m2 [m3 ... m25 ...]]' % (sys.argv[0],))
-        print('Note: Order will be preserved')
-        print(' ' * 4 + 'Sample run with default test case below:')
-        a_list = list('red green yellow blue'.split(" "))
-    print('Even a small class, such as {%s},' % (', '.join(a_list),),)
-    print('can be partitioned in a surprising number of different ways:')
-    n_o_s = len(a_list)
-    bell_number = bells[n_o_s - 1] if n_o_s < n_bells_ok else bells[n_bells_ok]
-    if n_o_s > n_bells_ok:
-        print('Error: Not prepared for %d partitions.' % (n_o_s,))
-        print('       Sorry. Please use %d members or less.' % (n_bells_ok,))
-        sys.exit(1)
-    a_partition = Partition(a_list)
-    for a_part in a_partition:
-        d_part = repr(a_part).replace('[', '{').replace(']', '}')
-        print(' ' * 4 + '* ' + d_part.replace("'", ''))
-
-    print(' ' * 4 + '=> (Number of partitions = %d,' % (len(a_partition),),)
-    print('expected is %d)' % (bell_number,),)
-    print('Procedure class-partitions takes one argument, a finite'
-          ' class C(with members separated by one or more spaces) and returns'
-          ' an itemized list like the above containing all of the partitions'
-          ' of C.'
-          ' (Thus the result is a class of classes of classes of members'
-          ' of C.)')
-
-
-if __name__ == '__main__':
-    test()
