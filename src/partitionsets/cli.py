@@ -56,6 +56,25 @@ def parse_args(argv=None):
     return parser.parse_args(argv)
 
 
+def show_bell_numbers(args, bells):
+    """Loosely coupled functionality."""
+
+    if not args.type or args.type == 'text':
+        for ndx in range(0, len(bells)):
+            print("%2d: %20d" % (ndx, bells[ndx]))
+    elif args.type == 'json':
+        p_map = {'d': {}}
+        p_map['d']['bellNumbers'] = []
+        for ndx in range(0, len(bells)):
+            p_map['d']['bellNumbers'].append(bells[ndx])
+        print(json.dumps(p_map))
+    else:
+        # must be args.type == 'csv' since choices are checked beforehand
+        for ndx in range(0, len(bells)):
+            print("%d,%d" % (ndx, bells[ndx]))
+    sys.exit(0)
+
+
 def main(argv=None):
     """
     Args:
@@ -99,20 +118,7 @@ def main(argv=None):
         print('Requested file ' + out_file + ' for output is ignored'
               ' in this version, sorry.')
     if args.bell_numbers:
-        if not args.type or args.type == 'text':
-            for ndx in range(0, len(bells)):
-                print("%2d: %20d" % (ndx, bells[ndx]))
-        elif args.type == 'json':
-            p_map = {'d': {}}
-            p_map['d']['bellNumbers'] = []
-            for ndx in range(0, len(bells)):
-                p_map['d']['bellNumbers'].append(bells[ndx])
-            print(json.dumps(p_map))
-        else:
-            # must be args.type == 'csv' since choices are checked beforehand
-            for ndx in range(0, len(bells)):
-                print("%d,%d" % (ndx, bells[ndx]))
-        sys.exit(0)
+        show_bell_numbers(args, bells)  # will not return
     if args.element:
         if args.multi_set:
             an_xset = list(" ".join(args.element).split(" "))
@@ -120,14 +126,15 @@ def main(argv=None):
             an_xset = ordered_set.OrderedSet(
                 list(" ".join(args.element).split(" ")))
     if args.verbosity >= 2:
-        print('Even a small class, such as {%s},' % (', '.join(an_xset),),
-              end=" ")
-        print('can be partitioned in a surprising number of different ways:')
+        print('Even a small class, such as {%s},'
+              ' can be partitioned in a surprising'
+              ' number of different ways:' % (', '.join(an_xset),))
     n_x_s = len(an_xset)
     bell_number = bells[n_x_s - 1] if n_x_s < n_bells_ok else bells[n_bells_ok]
     if n_x_s > n_bells_ok:
-        print('Error: Not prepared for %d partitions.' % (n_x_s,))
-        print('       Sorry. Please use %d members or less.' % (n_bells_ok,))
+        print('Error: Not prepared for %d partitions.'
+              '       Sorry. Please use %d members or less.'
+              '' % (n_x_s, n_bells_ok,))
         sys.exit(1)
     a_partition = partition.Partition(an_xset)
     if not args.type or args.type == 'text':
@@ -145,15 +152,14 @@ def main(argv=None):
 
         if args.verbosity:
             print('    ' + '=> (Number of partitions = %d,'
-                  % (len(a_partition),), end=" ")
-            print('expected is %d)' % (bell_number,))
+                  ' expected is %d)' % (len(a_partition), bell_number,))
         if args.verbosity >= 3:
-            print('Procedure class-partitions takes one argument, a', end=" ")
-            print('finite class C(members separated by one or more', end=" ")
-            print('spaces) and returns an itemized list like above', end=" ")
-            print('containing all partitions of C.  (Thus the result', end=" ")
-            print('is a class of classes of classes of members', end=" ")
-            print('of C.)')
+            print('Procedure class-partitions takes one argument, a'
+                  ' finite class C(members separated by one or more'
+                  ' spaces) and returns an itemized list like above'
+                  ' containing all partitions of C.  (Thus the result'
+                  ' is a class of classes of classes of members'
+                  ' of C.)')
 
     elif args.type == 'json':
         p_map = {'d': {}}
