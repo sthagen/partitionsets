@@ -11,8 +11,8 @@ Overview
       - |docs|
     * - tests
       - | |travis| |appveyor| |requires|
-        | |coveralls| |codecov|
-        | |landscape| |scrutinizer| |codacy| |codeclimate|
+        | |coveralls|
+        | |scrutinizer| |codeclimate|
     * - package
       - |version| |downloads| |wheel| |supported-versions| |supported-implementations|
 
@@ -35,18 +35,6 @@ Overview
 .. |coveralls| image:: https://coveralls.io/repos/sthagen/python-partitionsets/badge.svg?branch=master&service=github
     :alt: Coverage Status
     :target: https://coveralls.io/github/sthagen/python-partitionsets
-
-.. |codecov| image:: https://codecov.io/github/sthagen/python-partitionsets/coverage.svg?branch=master
-    :alt: Coverage Status
-    :target: https://codecov.io/github/sthagen/python-partitionsets
-
-.. |landscape| image:: https://landscape.io/github/sthagen/python-partitionsets/master/landscape.svg?style=flat
-    :target: https://landscape.io/github/sthagen/python-partitionsets/master
-    :alt: Code Quality Status
-
-.. |codacy| image:: https://img.shields.io/codacy/REPLACE_WITH_PROJECT_ID.svg?style=flat
-    :target: https://www.codacy.com/app/sthagen/python-partitionsets
-    :alt: Codacy Code Quality Status
 
 .. |codeclimate| image:: https://codeclimate.com/github/sthagen/python-partitionsets/badges/gpa.svg
    :target: https://codeclimate.com/github/sthagen/python-partitionsets
@@ -81,7 +69,7 @@ Overview
 
 Consolidation of existing third party recipes for partitioning of sets and multisets/bags.
 
-* Free software: BSD license
+* Free software: MIT license
 
 Installation
 ============
