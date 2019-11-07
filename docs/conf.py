@@ -23,22 +23,22 @@ if os.getenv('SPELLCHECK'):
 source_suffix = '.rst'
 master_doc = 'index'
 project = 'PartitionSets'
-year = '2013-2016'
+year = '2013-2019'
 author = 'Stefan Hagen'
 copyright = '{0}, {1}'.format(year, author)
-version = release = '0.1.1'
+version = release = '0.1.2'
 
 pygments_style = 'trac'
 templates_path = ['.']
 extlinks = {
-    'issue': ('https://github.com/sdrees/python-partitionsets/issues/%s', '#'),
-    'pr': ('https://github.com/sdrees/python-partitionsets/pull/%s', 'PR #'),
+    'issue': ('https://github.com/sthagen/python-partitionsets/issues/%s', '#'),
+    'pr': ('https://github.com/sthagen/python-partitionsets/pull/%s', 'PR #'),
 }
 import sphinx_py3doc_enhanced_theme
 html_theme = "sphinx_py3doc_enhanced_theme"
 html_theme_path = [sphinx_py3doc_enhanced_theme.get_html_theme_path()]
 html_theme_options = {
-    'githuburl': 'https://github.com/sdrees/python-partitionsets/'
+    'githuburl': 'https://github.com/sthagen/python-partitionsets/'
 }
 
 html_use_smartypants = True

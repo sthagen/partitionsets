@@ -24,8 +24,8 @@ def read(*names, **kwargs):
 
 setup(
     name='partitionsets',
-    version='0.1.1',
-    license='BSD',
+    version='0.1.2',
+    license='MIT',
     description='Consolidation of existing third party recipes for partitioning of sets and multisets/bags.',
     long_description='%s\n%s' % (
         re.compile('^.. start-badges.*^.. end-badges', re.M | re.S).sub('', read('README.rst')),
@@ -33,7 +33,7 @@ setup(
     ),
     author='Stefan Hagen',
     author_email='stefan@hagen.link',
-    url='https://github.com/sdrees/python-partitionsets',
+    url='https://github.com/sthagen/python-partitionsets',
     packages=find_packages('src'),
     package_dir={'': 'src'},
     py_modules=[splitext(basename(path))[0] for path in glob('src/*.py')],
@@ -43,7 +43,7 @@ setup(
         # complete classifier list: http://pypi.python.org/pypi?%3Aaction=list_classifiers
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: BSD License',
+        'License :: OSI Approved :: MIT License',
         'Operating System :: Unix',
         'Operating System :: POSIX',
         'Operating System :: Microsoft :: Windows',
@@ -53,6 +53,9 @@ setup(
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: Implementation :: CPython',
         'Programming Language :: Python :: Implementation :: PyPy',
         # uncomment if you test on these interpreters:

@@ -20,36 +20,36 @@ Overview
     :target: https://readthedocs.org/projects/python-partitionsets
     :alt: Documentation Status
 
-.. |travis| image:: https://travis-ci.org/sdrees/python-partitionsets.svg?branch=master
+.. |travis| image:: https://travis-ci.org/sthagen/python-partitionsets.svg?branch=master
     :alt: Travis-CI Build Status
-    :target: https://travis-ci.org/sdrees/python-partitionsets
+    :target: https://travis-ci.org/sthagen/python-partitionsets
 
-.. |appveyor| image:: https://ci.appveyor.com/api/projects/status/github/sdrees/python-partitionsets?branch=master&svg=true
+.. |appveyor| image:: https://ci.appveyor.com/api/projects/status/github/sthagen/python-partitionsets?branch=master&svg=true
     :alt: AppVeyor Build Status
-    :target: https://ci.appveyor.com/project/sdrees/python-partitionsets
+    :target: https://ci.appveyor.com/project/sthagen/python-partitionsets
 
-.. |requires| image:: https://requires.io/github/sdrees/python-partitionsets/requirements.svg?branch=master
+.. |requires| image:: https://requires.io/github/sthagen/python-partitionsets/requirements.svg?branch=master
     :alt: Requirements Status
-    :target: https://requires.io/github/sdrees/python-partitionsets/requirements/?branch=master
+    :target: https://requires.io/github/sthagen/python-partitionsets/requirements/?branch=master
 
-.. |coveralls| image:: https://coveralls.io/repos/sdrees/python-partitionsets/badge.svg?branch=master&service=github
+.. |coveralls| image:: https://coveralls.io/repos/sthagen/python-partitionsets/badge.svg?branch=master&service=github
     :alt: Coverage Status
-    :target: https://coveralls.io/github/sdrees/python-partitionsets
+    :target: https://coveralls.io/github/sthagen/python-partitionsets
 
-.. |codecov| image:: https://codecov.io/github/sdrees/python-partitionsets/coverage.svg?branch=master
+.. |codecov| image:: https://codecov.io/github/sthagen/python-partitionsets/coverage.svg?branch=master
     :alt: Coverage Status
-    :target: https://codecov.io/github/sdrees/python-partitionsets
+    :target: https://codecov.io/github/sthagen/python-partitionsets
 
-.. |landscape| image:: https://landscape.io/github/sdrees/python-partitionsets/master/landscape.svg?style=flat
-    :target: https://landscape.io/github/sdrees/python-partitionsets/master
+.. |landscape| image:: https://landscape.io/github/sthagen/python-partitionsets/master/landscape.svg?style=flat
+    :target: https://landscape.io/github/sthagen/python-partitionsets/master
     :alt: Code Quality Status
 
 .. |codacy| image:: https://img.shields.io/codacy/REPLACE_WITH_PROJECT_ID.svg?style=flat
-    :target: https://www.codacy.com/app/sdrees/python-partitionsets
+    :target: https://www.codacy.com/app/sthagen/python-partitionsets
     :alt: Codacy Code Quality Status
 
-.. |codeclimate| image:: https://codeclimate.com/github/sdrees/python-partitionsets/badges/gpa.svg
-   :target: https://codeclimate.com/github/sdrees/python-partitionsets
+.. |codeclimate| image:: https://codeclimate.com/github/sthagen/python-partitionsets/badges/gpa.svg
+   :target: https://codeclimate.com/github/sthagen/python-partitionsets
    :alt: CodeClimate Quality Status
 
 .. |version| image:: https://img.shields.io/pypi/v/partitionsets.svg?style=flat
@@ -72,9 +72,9 @@ Overview
     :alt: Supported implementations
     :target: https://pypi.python.org/pypi/PartitionSets
 
-.. |scrutinizer| image:: https://img.shields.io/scrutinizer/g/sdrees/python-partitionsets/master.svg?style=flat
+.. |scrutinizer| image:: https://img.shields.io/scrutinizer/g/sthagen/python-partitionsets/master.svg?style=flat
     :alt: Scrutinizer Status
-    :target: https://scrutinizer-ci.com/g/sdrees/python-partitionsets/
+    :target: https://scrutinizer-ci.com/g/sthagen/python-partitionsets/
 
 
 .. end-badges
