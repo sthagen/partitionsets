@@ -10,8 +10,7 @@ Overview
     * - docs
       - |docs|
     * - tests
-      - | |travis| |appveyor| |requires|
-        | |coveralls|
+      - | |travis| |appveyor| |requires| |coveralls|
         | |scrutinizer| |codeclimate|
     * - package
       - |version| |downloads| |wheel| |supported-versions| |supported-implementations|
