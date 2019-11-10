@@ -14,7 +14,12 @@ References:
 
 All python third party sources used are licensed under the MIT License.  """
 
-from collections import Sequence
+import sys
+
+if sys.version_info[0:2] > (3, 2):
+    from collections.abc import Sequence
+else:
+    from collections import Sequence
 
 
 class OrderedSet(Sequence):

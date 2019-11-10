@@ -41,23 +41,23 @@ Overview
 
 .. |version| image:: https://img.shields.io/pypi/v/partitionsets.svg?style=flat
     :alt: PyPI Package latest release
-    :target: https://pypi.python.org/pypi/PartitionSets
+    :target: https://pypi.org/project/PartitionSets/
 
 .. |downloads| image:: https://img.shields.io/pypi/dm/partitionsets.svg?style=flat
     :alt: PyPI Package monthly downloads
-    :target: https://pypi.python.org/pypi/PartitionSets
+    :target: https://pypi.org/project/PartitionSets/
 
 .. |wheel| image:: https://img.shields.io/pypi/wheel/partitionsets.svg?style=flat
     :alt: PyPI Wheel
-    :target: https://pypi.python.org/pypi/PartitionSets
+    :target: https://pypi.org/project/PartitionSets/
 
 .. |supported-versions| image:: https://img.shields.io/pypi/pyversions/partitionsets.svg?style=flat
     :alt: Supported versions
-    :target: https://pypi.python.org/pypi/PartitionSets
+    :target: https://pypi.org/project/PartitionSets/
 
 .. |supported-implementations| image:: https://img.shields.io/pypi/implementation/partitionsets.svg?style=flat
     :alt: Supported implementations
-    :target: https://pypi.python.org/pypi/PartitionSets
+    :target: https://pypi.org/project/PartitionSets/
 
 .. |scrutinizer| image:: https://img.shields.io/scrutinizer/g/sthagen/python-partitionsets/master.svg?style=flat
     :alt: Scrutinizer Status
@@ -80,7 +80,8 @@ Installation
 Documentation
 =============
 
-https://python-partitionsets.readthedocs.io/
+https://python-partitionsets.readthedocs.io/en/latest/
+
 
 Development
 ===========

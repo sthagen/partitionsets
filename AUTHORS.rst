@@ -2,4 +2,4 @@
 Authors
 =======
 
-* Stefan Hagen - http://stefan-hagen.website
+* Stefan Hagen - https://stefan-hagen.website

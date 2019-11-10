@@ -114,7 +114,7 @@ References
 [OEIS]: Wikipedia entry On-Line_Encyclopedia_of_Integer_Sequences at
 	https://en.wikipedia.org/wiki/On-Line_Encyclopedia_of_Integer_Sequences
 
-[Flake8]: https://pypi.python.org/pypi/flake8
+[Flake8]: https://pypi.org/project/flake8/
 
 [OrdSetImplPy]: http://code.activestate.com/recipes/576694/ (mixed with
 	the simplified code from Don Sawatzky's comment, which is sufficient
@@ -125,4 +125,4 @@ References
 [PartOfASet_WP]: Wikipedia entry Partition_of_a_set at
 	https://en.wikipedia.org/wiki/Partition_of_a_set
 
-[PyLint]: https://pypi.python.org/pypi/pylint
+[PyLint]: https://pypi.org/project/pylint/
