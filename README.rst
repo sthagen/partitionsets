@@ -66,7 +66,7 @@ Overview
 
 .. end-badges
 
-Consolidation of existing third party recipes for partitioning of sets and multisets/bags.
+Historic consolidation of existing third party recipes for partitioning of sets and multisets/bags.
 
 * Free software: MIT license
 
