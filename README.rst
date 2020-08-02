@@ -75,7 +75,11 @@ Installation
 
 ::
 
-    pip install partitionsets
+    pipx install partitionsets
+
+or::
+
+    python -m pip install partitionsets
 
 Documentation
 =============
