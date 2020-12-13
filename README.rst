@@ -10,7 +10,7 @@ Overview
     * - docs
       - |docs|
     * - tests
-      - | |appveyor| |requires| |coveralls|
+      - | |requires| |coveralls|
         | |scrutinizer| |codeclimate|
     * - package
       - |version| |downloads| |wheel| |supported-versions| |supported-implementations|
@@ -18,10 +18,6 @@ Overview
 .. |docs| image:: https://readthedocs.org/projects/python-partitionsets/badge/?style=flat
     :target: https://readthedocs.org/projects/python-partitionsets
     :alt: Documentation Status
-
-.. |appveyor| image:: https://ci.appveyor.com/api/projects/status/github/sthagen/python-partitionsets?branch=master&svg=true
-    :alt: AppVeyor Build Status
-    :target: https://ci.appveyor.com/project/sthagen/python-partitionsets
 
 .. |requires| image:: https://requires.io/github/sthagen/python-partitionsets/requirements.svg?branch=master
     :alt: Requirements Status
