@@ -24,7 +24,7 @@ def read(*names, **kwargs):
 
 setup(
     name='partitionsets',
-    version='0.1.2',
+    version='0.2.0',
     license='MIT',
     description='Consolidation of existing third party recipes for partitioning of sets and multisets/bags.',
     long_description_content_type='text/x-rst',
