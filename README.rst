@@ -10,18 +10,13 @@ Overview
     * - docs
       - |docs|
     * - tests
-      - | |coveralls|
-        | |scrutinizer| |codeclimate|
+      - |scrutinizer| |codeclimate|
     * - package
       - |version| |downloads| |wheel| |supported-versions| |supported-implementations|
 
 .. |docs| image:: https://readthedocs.org/projects/python-partitionsets/badge/?style=flat
     :target: https://readthedocs.org/projects/python-partitionsets
     :alt: Documentation Status
-
-.. |coveralls| image:: https://coveralls.io/repos/sthagen/python-partitionsets/badge.svg?branch=default&service=github
-    :alt: Coverage Status
-    :target: https://coveralls.io/github/sthagen/python-partitionsets
 
 .. |codeclimate| image:: https://api.codeclimate.com/v1/badges/2b595acdb05e494024dc/maintainability.svg
    :target: https://codeclimate.com/github/sthagen/python-partitionsets/builds
