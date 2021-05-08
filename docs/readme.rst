@@ -116,11 +116,11 @@ References
 
 [Flake8]: https://pypi.org/project/flake8/
 
-[OrdSetImplPy]: http://code.activestate.com/recipes/576694/ (mixed with
+[OrdSetImplPy]: https://code.activestate.com/recipes/576694/ (mixed with
 	the simplified code from Don Sawatzky's comment, which is sufficient
 	for this task)
 
-[PartImplPy]: http://code.activestate.com/recipes/577211/ (r1)
+[PartImplPy]: https://code.activestate.com/recipes/577211/ (r1)
 
 [PartOfASet_WP]: Wikipedia entry Partition_of_a_set at
 	https://en.wikipedia.org/wiki/Partition_of_a_set
