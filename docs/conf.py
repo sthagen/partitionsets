@@ -23,7 +23,7 @@ if os.getenv('SPELLCHECK'):
 source_suffix = '.rst'
 master_doc = 'index'
 project = 'PartitionSets'
-year = '2013-2019'
+year = '2013-2021'
 author = 'Stefan Hagen'
 copyright = '{0}, {1}'.format(year, author)
 version = release = '0.1.2'
