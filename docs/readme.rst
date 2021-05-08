@@ -34,11 +34,11 @@ Typical usage in python code might look like this::
 		print (a_part)
 
 
-The sript ``partition_sets.py`` inside the bin folder may offer useful commands.
+The sript ``partition-sets`` inside the bin folder may offer useful commands.
 For usage info run it with the ``-h`` help option::
 
-	$> partition_sets.py -h
-	usage: partition_sets.py [-h] [-q | -v] [-o OUT_FILENAME] [-T {text,csv,json}]
+	$> partition-sets -h
+	usage: partition-sets [-h] [-q | -v] [-o OUT_FILENAME] [-T {text,csv,json}]
 							 [-b] [-m]
 							 element [element ...]
 
