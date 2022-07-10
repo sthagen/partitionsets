@@ -24,7 +24,7 @@ from collections import defaultdict
 
 
 class Partition:
-    """ Sets of only a few items already have many ways they can be partitioned
+    """Sets of only a few items already have many ways they can be partitioned
     into subsets. Therefore it can be useful to generate these partitions by
     index, like the partition class were some large list where one can just
     access element "i". Of course one should not compute the whole list in
@@ -39,13 +39,14 @@ class Partition:
     a set with elements occurring more than once. One of these days I will
     perhaps understand how all of this fits together. Until then I'll post code
     solving specific situations. cf. [PartImplPy]"""
+
     def __init__(self, ordered_set):
         self.data = list(ordered_set)
         self.n_data = len(ordered_set)
         self.table = self.rgf_table()
 
     def __getitem__(self, i):
-        """ Generates set partitions by index """
+        """Generates set partitions by index"""
         if i > len(self) - 1:
             raise IndexError
         a_list = self.unrank_rgf(i)
@@ -62,7 +63,7 @@ class Partition:
         pass
 
     def as_set_partition(self, a_list):
-        """ Transform a restricted growth function into a partition """
+        """Transform a restricted growth function into a partition"""
         n_list = max(a_list[1:] + [1])
         n_data = self.n_data
         data = self.data
@@ -72,7 +73,7 @@ class Partition:
         return partition
 
     def rgf_table(self):
-        """ Compute the table values, but: The key line in the algorithm is
+        """Compute the table values, but: The key line in the algorithm is
         D[i,j] = j * D[i-1,j] + D[i-1,j+1] which identifies D[i,j] as the
         number of ways to add i new items to a partition that already has
         j blocks. So e.g. D[1, j] = j+1 because a new
@@ -83,7 +84,7 @@ class Partition:
         To solve this problem for combinations (i.e. get the i-th subset of a
         set), just take the binary representation of the index i, right? The
         places where 1's occur tell you which items to keep -- no need to
-        generate Pascal's triangle """
+        generate Pascal's triangle"""
         n_data = self.n_data
         a_dict = defaultdict(lambda: 1)
         for i in range(1, n_data + 1):
@@ -92,7 +93,7 @@ class Partition:
         return a_dict
 
     def unrank_rgf(self, r_saught):
-        """ Unrank a restricted growth function """
+        """Unrank a restricted growth function"""
         n_data = self.n_data
         a_list = [1 for _ in range(n_data + 1)]
         j = 1

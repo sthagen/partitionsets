@@ -23,11 +23,11 @@ else:
 
 
 class OrderedSet(Sequence):
-    """ Creates an ordered set from a list of tuples or
-    other hashable items.  cf. [OrdSetImplPy] """
+    """Creates an ordered set from a list of tuples or
+    other hashable items.  cf. [OrdSetImplPy]"""
 
     def __init__(self, hashable_items):
-        """ Save unique items of L in input order.  """
+        """Save unique items of L in input order."""
         self.__map = {}
         self.__oset = []
         for item in hashable_items:
