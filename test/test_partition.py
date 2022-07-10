@@ -4,15 +4,14 @@ It discovers the tests available and runs them.  """
 
 import unittest
 
-from partitionsets import ordered_set
-from partitionsets import partition
+from partitionsets import ordered_set, partition
 
 
 class TestPartition(unittest.TestCase):
-    """ Tests for the Partition class.  """
+    """Tests for the Partition class."""
 
     def setUp(self):
-        """ Useful with integer parameter. """
+        """Useful with integer parameter."""
         self.seq = range(3)
         self.x_len = 5
         self.parts = [
@@ -25,17 +24,17 @@ class TestPartition(unittest.TestCase):
         self.oset = ordered_set.OrderedSet(self.seq)
 
     def test_part(self):
-        """ Make sure the partition is constructable. """
+        """Make sure the partition is constructable."""
         a_part = partition.Partition(self.oset)
         self.assertEqual(isinstance(a_part, partition.Partition), True)
 
     def test_len(self):
-        """ Test the __len__ method. """
+        """Test the __len__ method."""
         len_part = len(partition.Partition(self.seq))
         self.assertEqual(len_part, self.x_len)
 
     def test_get(self):
-        """ Test the __getitem__ method. """
+        """Test the __getitem__ method."""
         a_part = partition.Partition(self.oset)
         for i, perm in enumerate(self.parts):
             print(perm)
@@ -43,14 +42,14 @@ class TestPartition(unittest.TestCase):
             self.assertEqual(a_part[i], perm)
 
     def test_del(self):
-        """ Test the __delitem__ dummy method. """
+        """Test the __delitem__ dummy method."""
         a_part = partition.Partition(self.oset)
         b_part = partition.Partition(self.oset)
         del a_part[0]
         self.assertEqual(a_part[0], b_part[0])
 
     def test_set(self):
-        """ Test the __setitem__ dummy method. """
+        """Test the __setitem__ dummy method."""
         a_part = partition.Partition(self.oset)
         b_part = partition.Partition(self.oset)
         a_part[0] = 'foo bar baz'
