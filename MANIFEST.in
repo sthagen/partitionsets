@@ -11,10 +11,10 @@ include AUTHORS.rst
 include CHANGELOG.rst
 include CONTRIBUTING.rst
 include LICENSE
-include README.rst
+include README.md
 
 include *.txt
 
-include tox.ini .codeclimate.yml .landscape.yml
+include tox.ini
 
 global-exclude *.py[cod] __pycache__ *.so *.dylib
