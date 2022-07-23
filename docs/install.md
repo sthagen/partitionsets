@@ -1,6 +1,4 @@
-============
-Installation
-============
+# Installation
 
 At the command line if only command line use planned:
 
