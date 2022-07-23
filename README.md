@@ -18,6 +18,7 @@ User and developer [documentation of partitionsets](https://codes.dilettant.life
 
 The primary source repository of [partitionsets is at sourcehut](https://git.sr.ht/~sthagen/partitionsets) 
 a collection of tools useful for software development.
+
 ## Status
 
 Production/stable.
