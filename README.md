@@ -10,30 +10,16 @@ Consolidation of existing third party recipes for partitioning of sets and multi
 [![supported-versions](https://img.shields.io/pypi/pyversions/partitionsets.svg?style=flat)](https://pypi.python.org/pypi/partitionsets/)
 [![supported-implementations](https://img.shields.io/pypi/implementation/partitionsets.svg?style=flat)](https://pypi.python.org/pypi/partitionsets/)
 
+## Documentation
+
+User and developer [documentation of partitionsets](https://codes.dilettant.life/docs/partitionsets).
+
+## Primary Source repository
+
+The primary source repository of [partitionsets is at sourcehut](https://git.sr.ht/~sthagen/partitionsets) 
+a collection of tools useful for software development.
 ## Status
 
-Experimental
-
-## What is in it
-
-A small, maybe growing collection of parsers and filters
-to ease dealing with specific information structures that
-drop off of REST backends ;-)
-
-## What is not yet in it
-
-just sayin':
-
-* proxy tools like digitally signed high water mark
-* storage via lzma compression
-* GDPR conforming mappings
-* GDPR conforming caching
-* work log analysis
-* process mining support
-* flattening of deeply nested records
-* refactoring the elderly pypi / packaging boilerplate
-* explore github actions vs. travis et al.
-* make user defined fields accessible per configuration
-* provide time tracking views from work log entries
+Production/stable.
 
 **Note**: The default branch is `default`.
