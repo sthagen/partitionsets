@@ -3,7 +3,7 @@
 
 ## 2022.7.23
 
-* Bumped dependecies for development and test
+* Bumped dependencies for development and test
 * Moved from sphinx to mkdocs
 * Moved documentation to https://codes.dilettant.life/docs/partitionsets/
 * Moved normative source repo to https://git.sr.ht/~sthagen/partitionsets
