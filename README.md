@@ -22,7 +22,7 @@ User and developer [documentation of partitionsets](https://codes.dilettant.life
 
 ## Bug Tracker
 
-Feature requests and bug reports are bested entered in the [todos of partitionsets](https://todo.sr.ht/~sthagen/partitionsets).
+Feature requests and bug reports are best entered in the [todos of partitionsets](https://todo.sr.ht/~sthagen/partitionsets).
 
 ## Primary Source repository
 
