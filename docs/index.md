@@ -18,7 +18,7 @@ You may find it useful for tasks involving small sets and also multi sets/bags.
 
 ## Bug Tracker
 
-Feature requests and bug reports are bested entered in the [todos of partitionsets](https://todo.sr.ht/~sthagen/partitionsets).
+Feature requests and bug reports are best entered in the [todos of partitionsets](https://todo.sr.ht/~sthagen/partitionsets).
 
 ## Primary Source repository
 
