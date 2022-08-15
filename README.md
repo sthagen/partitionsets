@@ -30,7 +30,7 @@ The primary source of `partitionsets` lives somewhere on a mountain in Central S
 But, we use decentralized version control (git), so any clone can become the source to everyone's benefit, no central only code.
 Anyway, the preferred public clones of `partitionsets` are:
 
-* [on codeberg](https://codeberg.org/sthagen/partitionsets) - a collaboration platform and git hosting for free and open source software, content and projects.
+* [on codeberg](https://codeberg.org/sthagen/partitionsets) - a democratic community-driven, non-profit software development platform operated by Codeberg e.V.
 * [at sourcehut](https://git.sr.ht/~sthagen/partitionsets) - a collection of tools useful for software development.
 
 ## Status
