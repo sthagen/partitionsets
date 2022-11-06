@@ -5,6 +5,9 @@ that they now equally work under python2 and python3. All bugs are mine ;-)"
 
 theme:
   name: 'material'
+  features:
+    - navigation.expand
+    - toc.integrate
   palette:
     # Light mode
     - media: "(prefers-color-scheme: light)"
