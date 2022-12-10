@@ -5,6 +5,8 @@ that they now equally work under python2 and python3. All bugs are mine ;-)"
 
 theme:
   name: 'material'
+  logo: assets/logo.png
+  favicon: images/favicon.ico
   features:
     - navigation.expand
     - toc.integrate
