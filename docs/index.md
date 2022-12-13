@@ -10,6 +10,8 @@ You may find it useful for tasks involving small sets and also multi sets/bags.
 
 [License: MIT](https://git.sr.ht/~sthagen/partitionsets/tree/default/item/LICENSE)
 
+Third party dependencies are documented in the folder [third-party](third-party/README.md).
+
 [![version](https://img.shields.io/pypi/v/partitionsets.svg?style=flat)](https://pypi.python.org/pypi/partitionsets/)
 [![downloads](https://pepy.tech/badge/partitionsets/month)](https://pepy.tech/project/partitionsets)
 [![wheel](https://img.shields.io/pypi/wheel/partitionsets.svg?style=flat)](https://pypi.python.org/pypi/partitionsets/)
