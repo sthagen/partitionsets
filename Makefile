@@ -1,9 +1,8 @@
-SHELL = /bin/bash
-
 .DEFAULT_GOAL := all
-isort = isort partitionsets test
 black = black -S -l 120 --target-version py310 partitionsets test
+lint = ruff partitionsets test
 pytest = pytest --asyncio-mode=strict --cov=partitionsets --cov-report term-missing:skip-covered --cov-branch --log-format="%(levelname)s %(message)s"
+types = @echo skipping mypy partitionsets
 
 .PHONY: install
 install:
@@ -17,7 +16,7 @@ install-all: install
 
 .PHONY: format
 format:
-	$(isort)
+	$(lint) --fix
 	$(black)
 
 .PHONY: init
@@ -28,13 +27,12 @@ init:
 .PHONY: lint
 lint:
 	python setup.py check -ms
-	flake8 partitionsets/ test/
-	$(isort) --check-only --df
+	$(lint) --diff
 	$(black) --check --diff
 
 .PHONY: types
 types:
-	@echo skipping mypy partitionsets
+	$(types)
 
 .PHONY: test
 test: clean
@@ -55,16 +53,16 @@ sbom:
 
 .PHONY: version
 version:
-	@cog -I. -P -c -r --check --markers="[[fill ]]] [[[end]]]" -p "from gen_version import *" pyproject.toml laskea/__init__.py
+	@cog -I. -P -c -r --check --markers="[[fill ]]] [[[end]]]" -p "from gen_version import *" pyproject.toml partitionsets/__init__.py
 
 .PHONY: secure
 secure:
-	@bandit --output current-bandit.json --baseline baseline-bandit.json --format json --recursive --quiet --exclude ./test,./build laskea
+	@bandit --output current-bandit.json --baseline baseline-bandit.json --format json --recursive --quiet --exclude ./test,./build partitionsets
 	@diff -Nu {baseline,current}-bandit.json; printf "^ Only the timestamps ^^ ^^ ^^ ^^ ^^ ^^ should differ. OK?\n"
 
 .PHONY: baseline
 baseline:
-	@bandit --output baseline-bandit.json --format json --recursive --quiet --exclude ./test,./build laskea
+	@bandit --output baseline-bandit.json --format json --recursive --quiet --exclude ./test,./build partitionsets
 	@cat baseline-bandit.json; printf "\n^ The new baseline ^^ ^^ ^^ ^^ ^^ ^^. OK?\n"
 
 .PHONY: clean
