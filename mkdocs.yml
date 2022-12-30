@@ -58,6 +58,7 @@ nav:
   - API: 'api.md'
   - Changes: 'changes.md'
   - Test Coverage: https://codes.dilettant.life/coverage/partitionsets/
+  - Third-Party: 'third-party/README.md'
   - Contribute: 'contribute.md'
 
 markdown_extensions:
