@@ -168,7 +168,6 @@ def main(argv=None):
         sys.exit(1)
     a_partition = partition.Partition(an_xset)
     if not args.type or args.type == 'text':
-
         for a_part in a_partition:
             d_part = repr(a_part)
             if args.verbosity >= 1:
@@ -179,7 +178,6 @@ def main(argv=None):
                 print('    ' + '* ' + d_part)
             else:
                 print(d_part)
-
         if args.verbosity:
             print(
                 '    ' + '=> (Number of partitions = %d,'
@@ -198,7 +196,6 @@ def main(argv=None):
                 ' is a class of classes of classes of members'
                 ' of C.)'
             )
-
     elif args.type == 'json':
         p_map = {'d': {}}
         if args.verbosity:
