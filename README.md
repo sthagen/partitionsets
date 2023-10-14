@@ -9,7 +9,8 @@ that they now equally work under python2 and python3. All bugs are mine ;-)
 You may find it useful for tasks involving small sets and also multi sets/bags.
 
 [License: MIT](https://git.sr.ht/~sthagen/partitionsets/tree/default/item/LICENSE) | 
-[Country of origin: Switzerland](https://git.sr.ht/~sthagen/partitionsets/tree/default/item/COUNTRY-OF-ORIGIN)
+[Country of origin: Switzerland](https://git.sr.ht/~sthagen/partitionsets/tree/default/item/COUNTRY-OF-ORIGIN) | 
+[Export control classification number(ECCN): EAR99](https://git.sr.ht/~sthagen/partitionsets/tree/default/item/EXPORT-CONTROL-CLASSIFICATION-NUMBER)
 
 Third party dependencies are documented in the folder [third-party](docs/third-party/README.md).
 
