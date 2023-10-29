@@ -8,18 +8,15 @@ that they now equally work under python2 and python3. All bugs are mine ;-)
 
 You may find it useful for tasks involving small sets and also multi sets/bags.
 
-[License: MIT](https://git.sr.ht/~sthagen/partitionsets/tree/default/item/LICENSE) | 
-[Country of origin: Switzerland](https://git.sr.ht/~sthagen/partitionsets/tree/default/item/COUNTRY-OF-ORIGIN) | 
-[Export control classification number(ECCN): EAR99](https://git.sr.ht/~sthagen/partitionsets/tree/default/item/EXPORT-CONTROL-CLASSIFICATION-NUMBER)
+[![License](docs/badges/license-spdx-mit.svg)](https://git.sr.ht/~sthagen/partitionsets/tree/default/item/LICENSE)
+[![Country of Origin](docs/badges/country-of-origin-name-switzerland-neutral.svg)](https://git.sr.ht/~sthagen/partitionsets/tree/default/item/COUNTRY-OF-ORIGIN)
+[![Export Classification Control Number (ECCN)](docs/badges/export-control-classification-number_eccn-ear99-neutral.svg)](https://git.sr.ht/~sthagen/partitionsets/tree/default/item/EXPORT-CONTROL-CLASSIFICATION-NUMBER)
+[![Configuration](docs/badges/configuration-sbom.svg)](https://git.sr.ht/~sthagen/partitionsets/tree/default/item/docs/third-party/README.md)
 
-Third party dependencies are documented in the folder [third-party](docs/third-party/README.md).
-
-[![version](https://img.shields.io/pypi/v/partitionsets.svg?style=flat)](https://pypi.python.org/pypi/partitionsets/)
-[![downloads](https://static.pepy.tech/badge/partitionsets/month)](https://pepy.tech/project/partitionsets)
-[![wheel](https://img.shields.io/pypi/wheel/partitionsets.svg?style=flat)](https://pypi.python.org/pypi/partitionsets/)
-[![supported-versions](https://img.shields.io/pypi/pyversions/partitionsets.svg?style=flat)](https://pypi.python.org/pypi/partitionsets/)
-[![supported-implementations](https://img.shields.io/pypi/implementation/partitionsets.svg?style=flat)](https://pypi.python.org/pypi/partitionsets/)
-[![maintenance-status](https://img.shields.io/github/commit-activity/y/sthagen/partitionsets.svg?style=flat)](https://git.sr.ht/~sthagen/partitionsets/log)
+[![Version](https://img.shields.io/pypi/v/partitionsets.svg?style=flat)](https://pypi.python.org/pypi/partitionsets/)
+[![Downloads](https://static.pepy.tech/badge/partitionsets/month)](https://pepy.tech/project/partitionsets)
+[![Supported Versions](https://img.shields.io/pypi/pyversions/partitionsets.svg?style=flat)](https://pypi.python.org/pypi/partitionsets/)
+[![Maintenance Status](https://img.shields.io/github/commit-activity/y/sthagen/partitionsets.svg?style=flat)](https://git.sr.ht/~sthagen/partitionsets/log)
 
 ## Documentation
 
