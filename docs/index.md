@@ -16,7 +16,7 @@ You may find it useful for tasks involving small sets and also multi sets/bags.
 [![Version](https://img.shields.io/pypi/v/partitionsets.svg?style=flat)](https://pypi.python.org/pypi/partitionsets/)
 [![Downloads](https://static.pepy.tech/badge/partitionsets/month)](https://pepy.tech/project/partitionsets)
 [![Supported Versions](https://img.shields.io/pypi/pyversions/partitionsets.svg?style=flat)](https://pypi.python.org/pypi/partitionsets/)
-[![Maintenance Status](https://img.shields.io/github/commit-activity/y/sthagen/partitionsets.svg?style=flat)](https://git.sr.ht/~sthagen/partitionsets/log)
+[![Maintenance Status](docs/badges/downloads-per-month.svg)](https://git.sr.ht/~sthagen/partitionsets/log)
 
 ## Bug Tracker
 
