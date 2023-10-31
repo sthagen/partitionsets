@@ -13,7 +13,7 @@ You may find it useful for tasks involving small sets and also multi sets/bags.
 [![Export Classification Control Number (ECCN)](docs/badges/export-control-classification-number_eccn-ear99-neutral.svg)](https://git.sr.ht/~sthagen/partitionsets/tree/default/item/EXPORT-CONTROL-CLASSIFICATION-NUMBER)
 [![Configuration](docs/badges/configuration-sbom.svg)](https://git.sr.ht/~sthagen/partitionsets/tree/default/item/docs/third-party/README.md)
 
-[![Version](https://img.shields.io/pypi/v/partitionsets.svg?style=flat)](https://pypi.python.org/pypi/partitionsets/)
+[![Version](docs/badges/latest-release.svg)](https://pypi.python.org/pypi/partitionsets/)
 [![Downloads](docs/badges/downloads-per-month.svg)](https://pepy.tech/project/partitionsets)
 [![Supported Versions](https://img.shields.io/pypi/pyversions/partitionsets.svg?style=flat)](https://pypi.python.org/pypi/partitionsets/)
 [![Maintenance Status](docs/badges/commits-per-year.svg)](https://git.sr.ht/~sthagen/partitionsets/log)
