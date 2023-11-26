@@ -8,15 +8,15 @@ that they now equally work under python2 and python3. All bugs are mine ;-)
 
 You may find it useful for tasks involving small sets and also multi sets/bags.
 
-[![License](docs/badges/license-spdx-mit.svg)](https://git.sr.ht/~sthagen/partitionsets/tree/default/item/LICENSE)
-[![Country of Origin](docs/badges/country-of-origin-name-switzerland-neutral.svg)](https://git.sr.ht/~sthagen/partitionsets/tree/default/item/COUNTRY-OF-ORIGIN)
-[![Export Classification Control Number (ECCN)](docs/badges/export-control-classification-number_eccn-ear99-neutral.svg)](https://git.sr.ht/~sthagen/partitionsets/tree/default/item/EXPORT-CONTROL-CLASSIFICATION-NUMBER)
-[![Configuration](docs/badges/configuration-sbom.svg)](https://git.sr.ht/~sthagen/partitionsets/tree/default/item/docs/third-party/README.md)
+[![License](https://git.sr.ht/~sthagen/partitionsets/blob/default/docs/badges/license-spdx-mit.svg)](https://git.sr.ht/~sthagen/partitionsets/tree/default/item/LICENSE)
+[![Country of Origin](https://git.sr.ht/~sthagen/partitionsets/blob/default/docs/badges/country-of-origin-name-switzerland-neutral.svg)](https://git.sr.ht/~sthagen/partitionsets/tree/default/item/COUNTRY-OF-ORIGIN)
+[![Export Classification Control Number (ECCN)](https://git.sr.ht/~sthagen/partitionsets/blob/default/docs/badges/export-control-classification-number_eccn-ear99-neutral.svg)](https://git.sr.ht/~sthagen/partitionsets/tree/default/item/EXPORT-CONTROL-CLASSIFICATION-NUMBER)
+[![Configuration](https://git.sr.ht/~sthagen/partitionsets/blob/default/docs/badges/configuration-sbom.svg)](https://git.sr.ht/~sthagen/partitionsets/tree/default/item/docs/third-party/README.md)
 
-[![Version](docs/badges/latest-release.svg)](https://pypi.python.org/pypi/partitionsets/)
-[![Downloads](docs/badges/downloads-per-month.svg)](https://pepy.tech/project/partitionsets)
-[![Python](docs/badges/python-versions.svg)](https://pypi.python.org/pypi/partitionsets/)
-[![Maintenance Status](docs/badges/commits-per-year.svg)](https://git.sr.ht/~sthagen/partitionsets/log)
+[![Version](https://git.sr.ht/~sthagen/partitionsets/blob/default/docs/badges/latest-release.svg)](https://pypi.python.org/pypi/partitionsets/)
+[![Downloads](https://git.sr.ht/~sthagen/partitionsets/blob/default/docs/badges/downloads-per-month.svg)](https://pepy.tech/project/partitionsets)
+[![Python](https://git.sr.ht/~sthagen/partitionsets/blob/default/docs/badges/python-versions.svg)](https://pypi.python.org/pypi/partitionsets/)
+[![Maintenance Status](https://git.sr.ht/~sthagen/partitionsets/blob/default/docs/badges/commits-per-year.svg)](https://git.sr.ht/~sthagen/partitionsets/log)
 
 ## Documentation
 
