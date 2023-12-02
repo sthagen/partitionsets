@@ -1,0 +1,18 @@
+{
+  "partitionsets": {
+    "version": "7.3.2",
+    "timestamp": "2023-12-02T15:29:10.418761",
+    "branch_coverage": true,
+    "show_contexts": true,
+    "covered_lines": 142,
+    "num_statements": 155,
+    "percent_covered": 88.64628820960699,
+    "percent_covered_display": "88.65",
+    "missing_lines": 13,
+    "excluded_lines": 0,
+    "num_branches": 74,
+    "num_partial_branches": 7,
+    "covered_branches": 61,
+    "missing_branches": 13
+  }
+}
